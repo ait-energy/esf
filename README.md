@@ -35,11 +35,8 @@ print(avail)
 dates = [datetime.date(2026, 6, 15), datetime.date(2026, 6, 16)]
 avail = esfc.fetch(dates)
 print(avail)
-```
 
-You can then pull forecasts for a selection of dates:
-
-```python
+# Pull forecasts for a selection of dates
 forecast = esfc.pull(avail)
 
 # Check which quantiles this forecast contains
