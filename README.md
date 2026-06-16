@@ -22,7 +22,7 @@ uv add git+https://github.com/ait-energy/esf
 
 ```python
 import datetime
-from src.esf.esf import EnergySystemForecastClient
+from esf import EnergySystemForecastClient
 
 # Create a client
 esfc = EnergySystemForecastClient(parameter="some_param", model="some_model", api_key="XXXXX")
