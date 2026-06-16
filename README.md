@@ -4,7 +4,9 @@ Proof of concept research API to access energy system related forecasts.
 
 > This is work in progress, improvements and more extensive documentation will follow!
 
-## Setup
+## Getting Started
+
+### Setup
 
 Setup a new Python environment using `uv`, e.g., by running:
 
@@ -18,7 +20,7 @@ Then install this by running
 uv add git+https://github.com/ait-energy/esf
 ```
 
-## Basic usage
+### Basic usage
 
 ```python
 import datetime
@@ -55,4 +57,12 @@ print(forecast.get(mode="quantile", value=0.5))
 # > 2026-06-16 23:30:00+02:00    139.27
 # > 2026-06-16 23:45:00+02:00    133.63
 # > Name: 3, Length: 192, dtype: float64
+```
+
+## Development
+
+Format using:
+
+```bash
+uvx ruff format .
 ```
